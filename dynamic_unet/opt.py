@@ -55,14 +55,15 @@ class DiceLoss(nn.Module):
 
 
 # Cell
-def dice_similarity(prediction, target, weights=None, ignore_index=None, eps=1e-8):
+def dice_similarity(output, target, weights=None, ignore_index=None, eps=1e-8):
     """
     Arguments:
-        output: (N, H, W) tensor of predictions
+        output: (N, C, H, W) tensor of model output
         target: (N, H, W) tensor corresponding to the pixel-wise labels
     Returns:
         loss: the Dice loss averaged over channels
     """
+    prediction = torch.argmax(output, dim=1)
     encoded_prediction = output.detach() * 0
     encoded_prediction.scatter_(1, prediction.unsqueeze(1), 1)
 
