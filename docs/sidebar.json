@@ -1,7 +1,6 @@
 {
   "dynamic_unet": {
     "Overview": "/",
-    "module name here": "/core",
     "Encoder": "/encoder",
     "Decoder": "/decoder",
     "Utils": "/utils",
