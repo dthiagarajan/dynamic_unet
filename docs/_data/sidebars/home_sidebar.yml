@@ -7,24 +7,27 @@ entries:
 - folders:
   - folderitems:
     - output: web,pdf
-      title: Export to modules
-      url: /export.html
+      title: Overview
+      url: /
     - output: web,pdf
-      title: Convert to html
-      url: /export2html.html
+      title: module name here
+      url: /core
     - output: web,pdf
-      title: Show doc
-      url: /showdoc.html
+      title: Encoder
+      url: /encoder
     - output: web,pdf
-      title: Test functions
-      url: /test.html
+      title: Decoder
+      url: /decoder
     - output: web,pdf
-      title: Core functions
-      url: /core.html
+      title: Utils
+      url: /utils
     - output: web,pdf
-      title: Command line functions
-      url: /cli.html
+      title: U-Net
+      url: /unet
+    - output: web,pdf
+      title: Optimization and Metrics
+      url: /opt
     output: web
-    title: Notebook
+    title: dynamic_unet
   output: web
   title: Sidebar
